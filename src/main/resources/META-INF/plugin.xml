@@ -1,9 +1,13 @@
 <idea-plugin>
-    <id>com.example.hello_word_plugin</id>
-    <name>Hello Word Plugin</name>
+    <id>hello_word</id>
+    <name>Hello Word</name>
+
+    <vendor email="integrations@moole.ai" url="https://github.com/varshak16">Moole Platform X</vendor>
 
     <description><![CDATA[
-        A minimal Hello Word JetBrains plugin.
+    A minimal IntelliJ IDEA extension designed to demonstrate the integration of
+    Spring Boot and the IntelliJ Platform SDK. It provides a simple 'Hello Word'
+    action for developers to test their environment and explore custom actions.
     ]]></description>
 
     <change-notes><![CDATA[
