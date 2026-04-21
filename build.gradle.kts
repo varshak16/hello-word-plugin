@@ -24,6 +24,27 @@ dependencies {
     }
 }
 
+intellijPlatform {
+    buildSearchableOptions = false
+
+    // ADD THIS: Metadata configuration (The Map)
+    pluginConfiguration {
+        id = "hello_word"
+        name = "Hello Word"
+        vendor {
+            name = "Moole Platform X"
+            email = "integrations@moole.ai"
+        }
+    }
+
+    // ADD THIS: Publishing configuration (The Key usage)
+    publishing {
+        // This looks into gradle.properties for 'intellijPublishToken'
+        token = providers.gradleProperty("intellijPublishToken")
+        channels = listOf("default")
+    }
+}
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(21))
